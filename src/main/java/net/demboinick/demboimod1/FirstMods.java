@@ -1,6 +1,7 @@
 package net.demboinick.demboimod1;
 
 import com.mojang.logging.LogUtils;
+import net.demboinick.demboimod1.block.ModBlocks;
 import net.demboinick.demboimod1.item.ModCreativeModTabs;
 import net.demboinick.demboimod1.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -17,19 +18,20 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 // This is a line of text on Terst2
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(FirstMods1.MOD_ID)
-public class FirstMods1 {
+@Mod(FirstMods.MOD_ID)
+public class FirstMods {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "demboimod1";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public FirstMods1(FMLJavaModLoadingContext context) {
+    public FirstMods(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
