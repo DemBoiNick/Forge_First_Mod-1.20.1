@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "category": "misc",
+
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+
+
+  "key": {
+    "#": {
+      "item": "demboimod1:sapphire"
+    }
+  },
+
+
+
+  "result": {
+    "item": "demboimod1:sapphire_block"
+  }
+
+
+
+}
