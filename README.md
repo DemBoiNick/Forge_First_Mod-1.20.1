@@ -1,0 +1,1 @@
+Hello! This is my first minecraft mod. I'm following a tutoral made by Kaupenjoe for Forge 1.20.1 (link: https://www.youtube.com/playlist?list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-). The first episodes were rough to get through, but I eventually got the hang of it. Feel free to take whatever you want from this (as this is already freely available).
