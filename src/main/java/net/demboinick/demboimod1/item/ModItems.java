@@ -19,6 +19,10 @@ public class ModItems {
             "raw_sapphire",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register(
+            "strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register(
             "metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
